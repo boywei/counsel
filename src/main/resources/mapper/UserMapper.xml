@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这是映射文件，不是配置文件，注意抬头。靠！-->
+
+<mapper namespace="top.boywei.zero.mapper.UserMapper">
+    <select id="getInfo" parameterType="String" resultType="top.boywei.zero.bean.User">
+        SELECT * FROM user WHERE name = #{name} AND password = #{password}
+    </select>
+</mapper>
+
+
+
+
