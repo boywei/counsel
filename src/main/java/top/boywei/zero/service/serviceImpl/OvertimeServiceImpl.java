@@ -15,8 +15,8 @@ public class OvertimeServiceImpl implements OvertimeService {
     OvertimeExampleMapper overtimeExampleMapper;
 
     @Override
-    public List<OvertimeExample> queryOvertimeHours() {
-        return overtimeExampleMapper.queryOvertime();
+    public List<OvertimeExample> queryOvertimeHours(Integer id) {
+        return overtimeExampleMapper.queryOvertime(id);
     }
 
 }

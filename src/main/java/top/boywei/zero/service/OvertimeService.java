@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface OvertimeService {
 
-    List<OvertimeExample> queryOvertimeHours();
+    List<OvertimeExample> queryOvertimeHours(Integer id);
 
 }
