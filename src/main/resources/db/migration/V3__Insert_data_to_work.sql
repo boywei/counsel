@@ -3,6 +3,10 @@ INSERT INTO `zero`.`work` (`id`, `line_date`, `hour_number`, `line_id`) VALUES (
 INSERT INTO `zero`.`work` (`id`, `line_date`, `hour_number`, `line_id`) VALUES (2, '2021-09-01', 15, 8);
 INSERT INTO `zero`.`work` (`id`, `line_date`, `hour_number`, `line_id`) VALUES (2, '2021-08-04', NULL, 9);
 INSERT INTO `zero`.`work` VALUES (2, '2021-07-08', 10, 10);
+INSERT INTO `zero`.`work` (`id`, `line_date`, `hour_number`, `line_id`) VALUES (2, '2020-10-27', 3, 11);
+INSERT INTO `zero`.`work` (`id`, `line_date`, `hour_number`, `line_id`) VALUES (2, '2020-09-26', 5, 12);
+INSERT INTO `zero`.`work` (`id`, `line_date`, `hour_number`, `line_id`) VALUES (2, '2021-12-27', 24, 13);
+INSERT INTO `zero`.`work` (`id`, `line_date`, `hour_number`, `line_id`) VALUES (2, '2020-11-08', 23, 14);
 
 -- 报错:
 -- org.flywaydb.core.api.exception.FlywayValidateException: Validate failed: Migrations have failed validation

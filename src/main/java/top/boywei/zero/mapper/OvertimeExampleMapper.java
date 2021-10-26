@@ -19,6 +19,14 @@ public interface OvertimeExampleMapper {
             "from user, work",
             "where user.id = work.id",
             "and user.id = #{id}",
+//            在mybatis的sql语句中,
+//            &lt;      <     小于号    <= 和&lt;=的表示是一个意思
+//            &gt;      >     大于号
+//            &amp;     &     和
+//            &apos;    ’     单引号
+//            &quot;    "     双引号
+            "and PERIOD_DIFF(DATE_FORMAT( now(), '%Y%m' ),DATE_FORMAT( line_date, '%Y%m' )) &lt; 12",
+            "and PERIOD_DIFF(DATE_FORMAT( now(), '%Y%m' ),DATE_FORMAT( line_date, '%Y%m' )) &gt;= 0",
             "group by id, month",
             "</script>"
     })
