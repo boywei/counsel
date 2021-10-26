@@ -19,7 +19,7 @@ public interface OvertimeExampleMapper {
             "from user, work",
             "where user.id = work.id",
             "and user.id = #{id}",
-//            "group by id, month",
+            "group by id, month",
             "</script>"
     })
     List<OvertimeExample> queryOvertime(@Param("id") Integer id);

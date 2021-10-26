@@ -19,7 +19,7 @@ public class OvertimeController {
     @RequestMapping("/overtime")
     public String overtime() {
         log.info("Starting to query overtime...");
-        List<OvertimeExample> list = overtimeService.queryOvertimeHours(1);
+        List<OvertimeExample> list = overtimeService.queryOvertimeHours(2);
         if(list != null) {
             for(OvertimeExample temp : list) {
                 log.info(temp.toString());
