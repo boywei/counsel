@@ -10,7 +10,7 @@ import java.sql.Date;
 public class OvertimeExample {
 
     private int id;
-    private Date month;
+    private String month;
     private double overtime;
 
 }

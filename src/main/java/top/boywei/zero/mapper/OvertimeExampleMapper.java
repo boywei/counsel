@@ -15,7 +15,7 @@ public interface OvertimeExampleMapper {
     @Select({
             "<script>",
             "select",
-            "distinct user.id id, DATE_FORMAT(line_date,'%Y-%m-01') month, SUM(hour_number) overtime",
+            "distinct user.id id, DATE_FORMAT(line_date,'%Y-%m') month, SUM(hour_number) overtime",
             "from user, work",
             "where user.id = work.id",
             "and user.id = #{id}",
