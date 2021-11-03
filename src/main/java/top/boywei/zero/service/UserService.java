@@ -2,6 +2,7 @@ package top.boywei.zero.service;
 
 import top.boywei.zero.bean.User;
 
+import java.util.List;
 import java.util.Map;
 
 public interface UserService {
@@ -10,4 +11,5 @@ public interface UserService {
 
     Map<String, Object> getUser(Integer id);
 
+    List<User> getAllUsers();
 }

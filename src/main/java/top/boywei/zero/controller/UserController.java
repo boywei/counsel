@@ -8,6 +8,7 @@ import top.boywei.zero.bean.User;
 import top.boywei.zero.service.UserService;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -41,5 +42,10 @@ public class UserController {
             map.put("errorCode", 204);
             return map;
         }
+    }
+
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
+    public List<User> getUser() {
+       return userService.getAllUsers();
     }
 }

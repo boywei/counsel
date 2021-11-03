@@ -7,6 +7,7 @@ import top.boywei.zero.bean.User;
 import top.boywei.zero.mapper.UserMapper;
 import top.boywei.zero.service.UserService;
 
+import java.util.List;
 import java.util.Map;
 
 @Slf4j
@@ -26,6 +27,12 @@ public class UserServiceImpl implements UserService {
     public Map<String, Object> getUser(Integer id) {
         log.info("Query user by id: {}", id);
         return userMapper.getUserById(id);
+    }
+
+    @Override
+    public List<User> getAllUsers() {
+        log.info("Query all users ...");
+        return userMapper.getAllUsers();
     }
 
 }
