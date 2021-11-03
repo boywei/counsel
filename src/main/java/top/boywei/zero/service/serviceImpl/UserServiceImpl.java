@@ -7,6 +7,8 @@ import top.boywei.zero.bean.User;
 import top.boywei.zero.mapper.UserMapper;
 import top.boywei.zero.service.UserService;
 
+import java.util.Map;
+
 @Slf4j
 @Service
 public class UserServiceImpl implements UserService {
@@ -18,6 +20,12 @@ public class UserServiceImpl implements UserService {
     public User login(String name, String password) {
         log.info("login by \"{}\" with password: {}", name, password);
         return userMapper.getInfo(name, password);
+    }
+
+    @Override
+    public Map<String, Object> getUser(Integer id) {
+        log.info("Query user by id: {}", id);
+        return userMapper.getUserById(id);
     }
 
 }

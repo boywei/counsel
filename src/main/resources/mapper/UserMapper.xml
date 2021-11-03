@@ -6,6 +6,10 @@
     <select id="getInfo" parameterType="String" resultType="top.boywei.zero.bean.User">
         SELECT * FROM user WHERE name = #{name} AND password = #{password}
     </select>
+
+    <select id="getUserById" parameterType="Integer" resultType="map">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
 </mapper>
 
 
