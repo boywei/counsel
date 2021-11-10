@@ -10,7 +10,6 @@ import java.util.List;
 
 @Repository
 public interface OvertimeExampleMapper {
-
     @ResultType(OvertimeExample.class)
     @Select({
             "<script>",
@@ -19,7 +18,7 @@ public interface OvertimeExampleMapper {
             "from user, work",
             "where user.id = work.id",
             "and user.id = #{id}",
-//            在mybatis的sql语句中,
+//            在mybatis的sql语句中, 用{}包含的script语句需要
 //            &lt;      <     小于号    <= 和&lt;=的表示是一个意思
 //            &gt;      >     大于号
 //            &amp;     &     和
