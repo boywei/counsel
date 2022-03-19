@@ -1,0 +1,24 @@
+{
+  "code": "200",
+  "msg": "排班表查询成功!",
+  "data": {
+    "binding": [
+      {
+        "schedule_id": 2,
+        "person_id": 1,
+        "person_type": 1,
+        "weekday": 123
+      },{
+        "schedule_id": 3,
+        "person_id": 2,
+        "person_type": 1,
+        "weekday": 123
+      },{
+        "schedule_id": 4,
+        "person_id": 3,
+        "person_type": 1,
+        "weekday": 123
+      }
+    ]
+  }
+}

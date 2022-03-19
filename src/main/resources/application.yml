@@ -1,9 +1,9 @@
 spring:
   datasource:
-    name: zero
-    url: jdbc:mysql://localhost:3306/zero #url
-    username: root  #用户名
-    password: 6688wmj  #密码
+    name: counsel
+    url: jdbc:mysql://localhost:3306/counsel #url
+    username: counsel  #用户名
+    password: counsel  #密码
     driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
   flyway:
     enabled: true
@@ -20,4 +20,4 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml  #配置映射文件
-  type-aliases-package: top.boywei.zero.bean #配置实体类
+  type-aliases-package: top.boywei.counsel.bean #配置实体类
